@@ -3,6 +3,7 @@
 }
 .slider {
     background-color: red;
+    font-family: sans-serif;
 }
 .slider .slider__slides {}
 .slider .slider__nav {}
@@ -33,7 +34,9 @@
     left: 200%;
 }
 
-.slides .slides__box{}
+.slides .slides__box{
+    padding: 10px;
+}
 .slides .slides__hdl {}
 .slides .slides__lead {}
 .slides .slides__link {}
