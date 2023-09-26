@@ -1,9 +1,22 @@
-.slider {}
+.slider {
+    background-color: red;
+}
 .slider .slider__slides {}
 .slider .slider__nav {}
 
 .slides {}
 .slides .slides__slide {}
+
+.slides .slides__slide:first-child {
+    background-color: gold;
+}
+.slides .slides__slide:nth-child(2) {
+    background-color: silver;
+}
+.slides .slides__slide:last-child {
+    background-color: green;
+}
+
 .slides .slides__box{}
 .slides .slides__hdl {}
 .slides .slides__lead {}
@@ -12,7 +25,6 @@
 .slider-nav {}
 .slider-nav .slider-nav__btn {}
 .slider-nav .slider-nav__btn.slider-nav__btn--prev {}
-
 
 
 
