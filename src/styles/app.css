@@ -57,19 +57,22 @@
     background-color: gold;
     left: 0px;
     animation-name: slide-1;
-    
-
+    background-image: url(../images/plik1biurko.webp);
 }
+
 .slides .slides__slide:nth-child(2) {
     background-color: silver;
     left: 100%;
     animation-name: slide-2;
+    background-image: url(../images/biurko2.webp);
+   
     
 }
 .slides .slides__slide:last-child {
     background-color: green;
     left: 200%;
     animation-name: slide-3;
+    background-image: url(../images/biurko3.webp);
   
 }
 
