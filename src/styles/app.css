@@ -1,12 +1,21 @@
 :root { 
     --sliderHeight: 300px;
 }
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .slider {
     background-color: red;
     font-family: sans-serif;
 }
 .slider .slider__slides {}
 .slider .slider__nav {}
+
 
 .slides {
     position: relative;
@@ -48,16 +57,19 @@
     width: 100%;
     top: 0;
     min-height: var(--sliderHeight);
-    animation-duration: 10s;
+    /*animation duration*/;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slides .slides__slide:first-child {
     background-color: gold;
     left: 0px;
     animation-name: slide-1;
-    background-image: url(../images/plikbiurko1.webp);
+    background-image: url(../images/plikbiurko1.webp);  
 }
 
 .slides .slides__slide:nth-child(2) {
@@ -75,16 +87,31 @@
 }
 
 .slides .slides__box{
-    padding: 10px;
+    padding: 10px 154px 10px 10px;
     background-color: rgba(0, 0, 0, .7);
     position: absolute;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    color: white;
 }
-.slides .slides__hdl {}
-.slides .slides__lead {}
-.slides .slides__link {}
+.slides .slides__hdl {
+    font-family: 'Roboto Bold', sans-serif;
+    font-weight: 500;
+}
+.slides .slides__lead {
+    font-family: 'Roboto Bold', sans-serif;
+    font-weight: 300;
+}
+.slides .slides__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .slider-nav {}
 .slider-nav .slider-nav__btn {}
